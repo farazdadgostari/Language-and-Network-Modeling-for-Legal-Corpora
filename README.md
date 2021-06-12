@@ -2,7 +2,8 @@
 This repository contains the code required to
 - Aquire and clean legal documents for network and language modeling
 - Language and Network Modeling of a legal corpus (here SCOTUS)
-## Data Sources
+## Data Sources:
+We used the raw SCOTUS opinions (as a set of .json files) from the data set downloaded from: https://www.courtlistener.com/api/bulk-data/
 
 ## Code Organization:
 
