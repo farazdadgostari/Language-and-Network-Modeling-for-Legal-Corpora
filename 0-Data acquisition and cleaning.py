@@ -429,7 +429,6 @@ for op in R_cited_the_SCOTUS_corpus_vectors:
         cited_the_timespan_SCOTUS_corpus_vectors[op]=citationlist              ###it produce empty citation vectors###############
         
         
-
 save_to (cited_by_timespan_SCOTUS_corpus_vectors,"cited_by_timespan_SCOTUS_corpus_vectors",output_path)
 R_cited_by_timespan_SCOTUS_corpus_vectors=load_from ("cited_by_timespan_SCOTUS_corpus_vectors",output_path)
 save_to (cited_the_timespan_SCOTUS_corpus_vectors,"cited_the_timespan_SCOTUS_corpus_vectors",output_path)
@@ -495,7 +494,6 @@ CREATE TABLE "Citations"(
     "USID_index_cited" 	TEXT
     )"""
         );
-
 n=0
 for op in S1:
     for cited_op in cited_the_timespan_SCOTUS_corpus_vectors[op]:
@@ -504,9 +502,7 @@ for op in S1:
                     INSERT INTO Citations ("ID-citing", "ID-cited", "listner_CaseID-citing", "listner_CaseID-cited",USID_index_citing,USID_index_cited)
                     VALUES (?,?,?,?,?,?)
                     """, (foreign_ID_dict[op], foreign_ID_dict[cited_op], op, cited_op, dict[op+".json"], dict[cited_op+".json"])
-                    );
-           
-
+                    );           
 conn.commit()
 conn.close()
 
