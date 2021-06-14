@@ -1,7 +1,7 @@
 # Language-and-Network-Modeling-for-Legal-Corpora
 This repository contains the code required for building the language and network model described in the X Paper. The search algorithms, including the reinforcemet algorithm developed in the paper use this model as a representation of the knowledge space for law search.  The code for the search algorithms described in the Paper could be found in this [Reinforcement-Learning-for-Law-Search repository](https://github.com/farazdadgostari/Reinforcement-Learning-for-Law-Search).
 
-The [Language-and-Network-Modeling-for-Legal-Corpora repository] contains the code required to
+The [Language-and-Network-Modeling-for-Legal-Corpora repository](https://github.com/farazdadgostari/Language-and-Network-Modeling-for-Legal-Corpora) contains the code required to
 - Acquire and clean legal documents for network and language modeling
 - Language and Network Modeling of a legal corpus (here SCOTUS)
 ## Data Sources:
@@ -10,7 +10,7 @@ We used the raw SCOTUS opinions (as a set of .json files) from the data set down
 ## Code Organization:
 ### 0-Data acquisition and cleaning.py
 This code, 
-   1. Reads raw SCOTUS opinions (as a set of .json files) from the data set downloaded from: https://www.courtlistener.com/api/bulk-data/
+   1. Reads raw SCOTUS opinions (as a set of .json files) from the data set downloaded from [courtlistener](https://www.courtlistener.com/api/bulk-data/).
    2. Extracts text of each opinion excluding all citations. Each opinion is saved as .txt file in the 'output_data_paths'.
    3. Generates citation counters and citation vectors for each opinion
         - Counter of the number of citations (cited and cited by) regardless of that if the citation is within the same corpus.
