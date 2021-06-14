@@ -1,5 +1,5 @@
 # Language-and-Network-Modeling-for-Legal-Corpora
-This repository contains the code required for building the language and network model described in the X Paper. The search algorithms, including the reinforcemet algorithm developed in the paper use this model as a representation of the knowledge space for law search.  The code for the search algorithms described in the Paper could be found in this [repository](https://github.com/farazdadgostari/Reinforcement-Learning-for-Law-Search).
+This repository contains the code required for building the language and network model described in the X Paper. The search algorithms, including the reinforcemet algorithm developed in the paper use this model as a representation of the knowledge space for law search.  The code for the search algorithms described in the Paper could be found in this [Reinforcement-Learning-for-Law-Search repository](https://github.com/farazdadgostari/Reinforcement-Learning-for-Law-Search).
 
 This repository contains the code required to
 - Acquire and clean legal documents for network and language modeling
