@@ -5,8 +5,7 @@ The [Language-and-Network-Modeling-for-Legal-Corpora repository](https://github.
 - Acquire and clean legal documents for network and language modeling
 - Language and Network Modeling of a legal corpus (here SCOTUS)
 ## Data Sources:
-We used the raw SCOTUS opinions (as a set of .json files) from the data set downloaded from: https://www.courtlistener.com/api/bulk-data/
-
+We used the raw SCOTUS opinions (as a set of .json files) from the data set downloaded from [courtlistener](https://www.courtlistener.com/api/bulk-data/).
 ## Code Organization:
 ### 0-Data acquisition and cleaning.py
 This code, 
