@@ -30,3 +30,14 @@ to provide the necessary documents to form the topic model and citation network.
 Change this as necessary for your own database, or form the corpus
 from a directory of files or a list of strings using the various
 helper functions in corpus.py.
+
+### corpus_f.py
+This code includes functions and classes for tokenizing texts, constructing a
+dictionary, and computing a document-term matrix suitable 
+for input to a topic modeller such as LDA.
+
+
+### topic_f.py
+This code computes similarity with a Latent Dirichlet Allocation (LDA) topic model, 
+which determines the distribution of TOPICS (collections of terms from
+the dictionary) in each document.
