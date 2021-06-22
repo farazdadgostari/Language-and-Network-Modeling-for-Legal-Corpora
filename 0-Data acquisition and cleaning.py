@@ -99,30 +99,24 @@ os.chdir(dir_path)
 
 """setting the paths for source data to be read from"""
 #algorithm  is feeded using the SCOTUS bulk data downloaded from Courtlistener.com
-Rawdata_path = "../../"+"Data/0-Courtlistener.com"
-Raw_opinions_path = Rawdata_path+'/scotus-raw'
-Cluster_metadata_path= Rawdata_path+'/Cluster_metadata'
-Docket_metadata_path= Rawdata_path+'Docket_metadata'
-
+Rawdata_path =  os.path.join("..","..","Data","0-Courtlistener.com")
+Raw_opinions_path = os.path.join(Rawdata_path,'scotus-raw')
+Cluster_metadata_path = os.path.join(Rawdata_path,'Cluster_metadata')
+Docket_metadata_path = os.path.join(Rawdata_path,'Docket_metadata')
 
 """setting target path for output data to be saved in"""
 path = 'Code\'s data lake'
 output_data_paths.append(path)
 
-opinion_save_path = path + '/Extracted opinions in the text format-no citation-from html_with_citations tag'
+opinion_save_path = os.path.join(path,"Extracted opinions in the text format-no citation-from html_with_citations tag")
 output_data_paths.append(opinion_save_path)
 
-
-
-
-opinion_save_path_original = path + '/Extracted opinions in the text format-no citation-from html_with_citations tag with Opinion_ID naming'
+opinion_save_path_original = os.path.join(path,"Extracted opinions in the text format-no citation-from html_with_citations tag with Opinion_ID naming")
 output_data_paths.append(opinion_save_path_original)
-
-
 
 #a folder to save the files of resulted data that is generated in the 2st section of the code-
 #it contains most of input data for the RL-algorithm and DB generation phase
-output_path = path + '/output data'
+output_path = os.path.join(path,"output data")
 output_data_paths.append(output_path)
 
 
