@@ -98,7 +98,7 @@ os.chdir(dir_path)
 
 
 """setting the paths for source data to be read from"""
-#algorithm  is feeded using the SCOTUS bulk data downloaded from Courtlistener.com
+#algorithm  is feeded using the SCOTUS bulk data downloaded from Courtlistener.com to Rawdata_path in the following seperate folders:
 Rawdata_path =  os.path.join("..","..","Data","0-Courtlistener.com")
 Raw_opinions_path = os.path.join(Rawdata_path,'scotus-raw')
 Cluster_metadata_path = os.path.join(Rawdata_path,'Cluster_metadata')
