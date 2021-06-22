@@ -33,12 +33,12 @@ dictionary, and computing a document-term matrix suitable
 for input to a topic modeller such as LDA.
 
 
-### topic_f.py
+### topicmodel_f.py
 This code computes similarity with a Latent Dirichlet Allocation (LDA) topic model, 
 which determines the distribution of TOPICS (collections of terms from
 the dictionary) in each document.
 
-### topic_f.py
+### btl_f.py
 This is a library to create a "Similarity Matrix" of the documents contained in the corpus based on an 
 algebraic aggregation of topic model and citation network of the corpus.
 
