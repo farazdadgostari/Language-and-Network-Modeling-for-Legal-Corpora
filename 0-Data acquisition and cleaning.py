@@ -91,7 +91,7 @@ Starttime=time.time()
 output_data_paths=[]
 
 """setting working dir path and other env veriables"""
-dir_path = "/Users/faraz/Dropbox (Team Beling)/1.Edu-PhD/1-Research/1.Research Projects/6.Computational Law/Code/0-Data aquisation and cleaning-Github2" 
+dir_path = os.getcwd()
 #running on any platform, if you set this address right other paths will be generated automatically
 os.chdir(dir_path)
 
